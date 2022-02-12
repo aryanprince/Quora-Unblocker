@@ -4,25 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     chrome.tabs.query(query, (tabs) => {
         dialogBox.innerHTML = getBarkedTitle(tabs[0].title);
-        document.getElementById("root").innerHTML = "The full URL of this page is:<br>" + window.location.href;
+        document.getElementById("root").innerHTML = "URL:<br>" + window.location.href;
     });
 });
 
 const getBarkedTitle = (tabTitle) => {
-    const barkTitle = `${getRandomBark()} Ahem.. I mean, we are at: ${tabTitle}`
+    const barkTitle = `We are at: ${tabTitle}`
     return barkTitle;
-}
-
-const barks = [
-    'Barf barf!',
-    'Birf birf!',
-    'Woof woof!',
-    'Arf arf!',
-    'Yip yip!',
-    'Biiiirf!'
-]
-
-const getRandomBark = () => {
-    const bark = barks[Math.floor(Math.random() * barks.length)];
-    return bark;
 }
