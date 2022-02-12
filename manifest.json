@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Quora Unblocker",
     "version": "0.1.0",
-    "description": "Removes the annoying login to Quora popup.",
+    "description": "Removes the login to Quora popup.",
 
     "browser_action": {
         "default_popup": "popup.html",

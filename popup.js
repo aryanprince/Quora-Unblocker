@@ -8,6 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const getTabURL = (tabURL) => {
-    const barkTitle = `Current URL: ${tabURL}`
-    return barkTitle;
+    
+    if ((tabURL).includes('quora.com')) {
+        const barkTitle = `Current URL: ${tabURL}`
+        chrome.tabs.update({
+            url: 'quora.com'
+          });
+        return barkTitle;
+    }
+    else {
+        const barkTitle = `lulz`
+        return barkTitle;
+    }
 }
