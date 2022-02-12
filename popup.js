@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     chrome.tabs.query(query, (tabs) => {
         dialogBox.innerHTML = getBarkedTitle(tabs[0].title);
+        document.getElementById("root").innerHTML = "The full URL of this page is:<br>" + window.location.href;
     });
 });
 
