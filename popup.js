@@ -10,14 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
 const getTabURL = (tabURL) => {
     
     if ((tabURL).includes('quora.com')) {
-        const barkTitle = `Current URL: ${tabURL}`
-        chrome.tabs.update({
-            url: 'quora.com'
-          });
-        return barkTitle;
+        const dialogMessage = `Yay!`
+        
+            var lastChar = tabURL.substr(-1);
+            if (lastChar !== '/') {
+                chrome.tabs.update({
+                    url: tabURL + "/"
+                });
+            }
+            
+        return dialogMessage;
     }
     else {
-        const barkTitle = `lulz`
-        return barkTitle;
+        const dialogMessage = `Try this on quora.com`
+        return dialogMessage;
     }
 }
