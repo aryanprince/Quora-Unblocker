@@ -3,12 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const query = { active: true, currentWindow: true };
 
     chrome.tabs.query(query, (tabs) => {
-        dialogBox.innerHTML = getBarkedTitle(tabs[0].title);
-        document.getElementById("root").innerHTML = "URL:<br>" + window.location.href;
+        dialogBox.innerHTML = getTabURL(tabs[0].url);
     });
 });
 
-const getBarkedTitle = (tabTitle) => {
-    const barkTitle = `We are at: ${tabTitle}`
+const getTabURL = (tabTitle) => {
+    const barkTitle = `Current URL: ${tabTitle}`
     return barkTitle;
 }
