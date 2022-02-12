@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const getTabURL = (tabTitle) => {
-    const barkTitle = `Current URL: ${tabTitle}`
+const getTabURL = (tabURL) => {
+    const barkTitle = `Current URL: ${tabURL}`
     return barkTitle;
 }
