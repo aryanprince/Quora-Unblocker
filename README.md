@@ -7,4 +7,4 @@ Perfect when you don't want to login or even better, not feel like signing up to
 * Select the extracted folder. Voila!
 
 # Usage
-When on Quora, click on the extension to remove the popup.
+When on Quora, click on the extension to remove the login popup.
