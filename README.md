@@ -1,5 +1,5 @@
 # Quora Unblocker - Removes the annoying login popup
-Perfect when you don't want to login or even better, not feel like signing up to Quora.
+Perfect when you don't want to login or even better, not even sign up to Quora.
 
 # Installation
 * Download and extract the [.zip file](https://github.com/aryanprince/Quora-Unblocker/releases/tag/v0.1.0)
